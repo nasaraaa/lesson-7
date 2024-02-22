@@ -96,3 +96,61 @@ nav li{
     border: 10px solid purple;
     color: cadetblue;
 }
+.section-bg{
+    background-color: aquamarine;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    animation-name: section-bg1;
+    animation-duration: 2s;
+    animation-delay: 0,5;
+    animation-timing-function: ease-in;
+}
+.section-bg h1{
+    text-align: center;
+ 
+}
+.item img{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 30px;
+}
+.all-items p{
+    margin-bottom: 40px;
+}
+.item p{
+    position: absolute;
+    border-radius: 30px;
+    background-color: rgba(12, 12, 73, 0.5);
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 0.5s;
+
+}
+.item{
+    display: inline-block;
+	max-width: 300px;
+	margin: 40px;
+	position: relative;
+}
+.all-items{
+    margin-top: -150px;
+}
+@keyframes section-bg1{
+    from{
+        background-color: brown;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+.item p:hover{
+    opacity: 1;
+    border: 2px solid yellow;
+}
