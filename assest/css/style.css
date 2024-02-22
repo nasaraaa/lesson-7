@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.header1{
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+nav li{
+    display: inline-block;
+    padding-bottom: 150px;
+}
+.container {
+	max-width: 1640px;
+	width: 100%;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+.navbar a{
+    margin: 80px;
+}
+.contact button{
+    background-color: transparent;
+    border: none;
+    padding-left: 15px;
+    color: #000;
+    text-transform: capitalize;
+    border-radius: 20px;
+    border: 2px solid red;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 0,5s;
+    transition-timing-function: ease;
+}
+.contact button:hover{
+    background-color: gold;
+    color: purple;
+    border: 2px solid green;
+}
+.bg-img{
+    background-image: url("../img/18-Iconic-view-at-intersection-of-Washington-and-Water-streets-June-2019-photo-1-by-Lore-Croghan-4-1024x728.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation-name: slider;
+    animation: slider 10s infinite alternate;
+    position: relative;
+}
+@keyframes slider{
+    0%{
+        background-image: url(../img/18-Iconic-view-at-intersection-of-Washington-and-Water-streets-June-2019-photo-1-by-Lore-Croghan-4-1024x728.jpg);
+    }
+    50%{
+        background-image: url(../img/istockphoto-1271559782-612x612.jpg);
+    }
+    100%{
+        background-image: url(../img/Manhattan-Bridge-View-6-1.jpg);
+    }
+}
+.bg-img a{
+    color: white;
+    opacity: 0;
+}
+.bg-img:hover a{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f40808;
+    border-radius: 20px;
+    padding: 10px;
+}
+.section1 p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border: 5px solid green;
+    transition-property: all;
+    border-radius: 20px;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease;
+}
+.section1 p:hover{
+    background-color: aqua;
+    border: 10px solid purple;
+    color: cadetblue;
+}
